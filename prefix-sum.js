@@ -11,3 +11,9 @@ const prefix_brute = (arr) => {
 //Prefix Sum Optimized
 const prefix_optimized = (arr) =>
   arr.reduce((prev, curr, ind) => [...prev, curr + (prev[ind - 1] || 0)], []);
+
+//Prefix Sum [i, j]
+pf[j] - pf[i-1];
+
+//Prefix Sum [0, i]
+pf[i];
